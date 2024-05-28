@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:crudapp/appscreens/addproduct.dart';
 import 'package:crudapp/appscreens/common/apptextstyle.dart';
 import 'package:crudapp/appscreens/updateproduct.dart';
@@ -142,6 +141,7 @@ class _ProductListPageState extends State<ProductListPage> {
               IconButton(
                 onPressed: (){
                   _showConfirmDeleteWithDialog(products[index].id);
+                  _getProducts();
                 },
                 icon: Icon(
                   Icons.delete,
